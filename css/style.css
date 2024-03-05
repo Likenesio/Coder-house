@@ -1,0 +1,815 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  background-image: url(../images/noise.jpg);
+  color: #524e4e;
+}
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*-----------------------------------COMIENZO DE REDES HEADER-----------------------------------*/
+.container-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0.625rem;
+  background-color: #fafafa;
+}
+.container-redes p img {
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-right: 2px;
+}
+.container-redes p {
+  font-size: 0.75rem;
+  color: #aba9aa;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.texto-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.icon-redes {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  gap: 0.625rem;
+}
+.icon-redes img {
+  width: 1.875rem;
+  height: 1.875rem;
+  cursor: pointer;
+}
+/*-----------------------------------FIN DE REDES HEADER-----------------------------------*/
+
+/*-----------------------------------COMIENZO NAVBAR HEADER---------------------------------*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: #aba9aa ridge 1px;
+  gap: 2rem;
+}
+.logo {
+  width: 12.5rem;
+  height: auto;
+}
+.navbarLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navbarLinks a {
+  font-size: 0.9375rem;
+  font-weight: bold;
+  color: #524e4e;
+}
+.navbarLinks a:hover {
+  color: #0facb3;
+}
+.btnAgendar,
+.btnObtenerCita,
+.btnHablemos,
+.enviarFormulario {
+  text-align: center;
+  color: rgb(248, 248, 242);
+  background-color: #0facb3;
+  cursor: pointer;
+  border: #0facb3 solid 0px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 8rem;
+  height: 3rem;
+}
+.btnAgendar:hover,
+.btnObtenerCita:hover,
+.btnHablemos:hover {
+  color: #0facb3;
+  background-color: rgb(248, 248, 242);
+  transform: scale(0.9);
+  border: #0facb3 solid 2px;
+}
+/*-----------------------------------FIN NAVBAR HEADER-------------------------------------*/
+/*-----------------------------------INICIO TITULO DE PAGES---------------------------------*/
+.seccion-titulo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.div-titulo {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
+  box-shadow: #524e4e 6px 6px 12px;
+  font-weight: bold;
+  opacity: 0.7;
+  border-radius: 1rem;
+  max-width: 100%;
+}
+.titulo {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+/*-----------------------------------FIN TITULO PAGES-------------------------------------*/
+/*-----------------------------------COMIENZO BURGER MENU HEADER---------------------------*/
+.burger {
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  top: 16%;
+  border: none;
+  list-style: none;
+  z-index: 10;
+}
+.burger div {
+  margin-top: 0.2rem;
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #0facb3;
+  border-radius: 0.625rem;
+  position: relative;
+  transition: all 0.3s linear;
+  transform-origin: 0.0621rem;
+}
+/*-----------------------------------FIN BURGER MENU HEADER--------------------------------*/
+
+/*-----------------------------------COMIENZO PRESENTACION INDEX.HTML----------------------*/
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 100%;
+  max-height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+.img-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.parrafo-img {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+/*---------------------------------------FIN PRESENTACION INDEX.HTML----------------------------------*/
+
+/*---------------------------------------COMIENZO SECCION PROFESIONALES INDEX.HTML--------------------*/
+.seccion-profesionales {
+  padding: 4rem;
+}
+.cards-container-presentacion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;
+  max-width: 100%;
+  padding-top: 2rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2rem;
+}
+.cards-container-presentacion li {
+  display: block;
+  color: #fafafa;
+  background-color: #0facb3;
+  border: #0facb3 solid 3px;
+  box-shadow: #fafafa 2px 2px;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 20rem;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cards-container-presentacion li:hover {
+  transform: scale(1.2);
+}
+.especialistas {
+  padding: 0.625rem;
+  width: 50%;
+  height: auto;
+}
+/*---------------------------------------FIN SECCION PROFESIONALES INDEX.HTML-------------------------*/
+
+/*---------------------------------------COMIENZO FOOTER----------------------------------------------*/
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #0facb3;
+  padding: 10rem 10rem 10rem 10rem;
+  gap: 20rem;
+}
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-size: 1rem;
+  color: #524e4e;
+}
+.card-footer a {
+  color: #524e4e;
+  text-decoration: none;
+}
+.card-footer a:hover {
+  color: #fafafa;
+}
+.card-footer li {
+  margin-top: 0.4625rem;
+}
+/*---------------------------------------FIN FOOTER---------------------------------------------------*/
+
+/*---------------------------------------INICIO IPAD RESOLUTION----------------------------------------*/
+@media only screen and (max-width: 900px) {
+  /*-----------------------------------INICIO REDES---------------------------------------------*/
+  .container-redes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  /*-----------------------------------FIN REDES------------------------------------------------*/
+  /*-----------------------------------INICIO NAVBAR--------------------------------------------*/
+  .btnAgendar,
+  .btnObtenerCita,
+  .btnHablemos {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 0.8125rem;
+  }
+  .navbarLinks {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    opacity: 0.8;
+    right: 0;
+    top: 21%;
+    background-color: #0facb3;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 3;
+  }
+  .navbarLinks a:hover {
+    color: #fafafa;
+  }
+  .btnAgendar {
+    margin-right: 18%;
+    background-color: rgb(248, 248, 242);
+    color: #0facb3;
+    margin-left: 0;
+  }
+  .btnAgendar:hover {
+    color: rgb(248, 248, 242);
+    background-color: #0facb3;
+    transform: scale(0.9);
+    border: #fafafa solid 2px;
+  }
+  .burger {
+    position: absolute;
+    display: block;
+    right: 0.625rem;
+    z-index: 10;
+  }
+  .nav-active {
+    transform: translateX(0);
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  /*-----------------------------------FIN NAVBAR--------------------------------------------*/
+  /*-----------------------------------INICIO FOOTER-----------------------------------------*/
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem 2rem 0rem;
+  }
+  /*-----------------------------------FIN FOOTER--------------------------------------------*/
+  .img-container {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/*---------------------------------------FIN IPAD RESOLUTIO-------------------------------------------------------*/
+/*---------------------------------------INICIO PHONE RESOLUTIO---------------------------------------------------*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  button {
+    margin-left: 0;
+    width: 7rem;
+    height: 2rem;
+    font-size: 0.8125rem;
+  }
+  .logo {
+    width: 10rem;
+  }
+  .burger{
+    top: 20%;
+  }
+  .navbarLinks {
+    top: 26%;
+  }
+  .boton-image {
+    gap: 10px;
+  }
+}
+/*---------------------------------------FIN PHONE RESOLUTIO------------------------------------------------------*/
+/*-----------------------------------INICIO BLOG--------------------------------------------*/
+
+.seccion-articulos-blog-1 {
+  padding-top: 2rem;
+}
+.container-blog-1 {
+  background-color: #fafafa;
+  padding: 1.25rem;
+  margin: 1.25rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 60vw;
+  margin-left: 23%;
+  margin-bottom: 5%;
+}
+.container-blog-2 {
+  background-color: #0facb3;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 60vw;
+  margin-left: 6%;
+  margin-bottom: 5%;
+}
+.contenido-articulo-tipo-1 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-left: #333 solid 1px;
+}
+.contenido-articulo-tipo-2 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-right: #333 solid 1px;
+}
+.contenido-articulo-tipo-1 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 0.625rem;
+  color: #333;
+  margin-top: 10%;
+}
+.contenido-articulo-tipo-2 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 10%;
+}
+
+.contenido-articulo-tipo-1 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+  justify-content: center;
+  margin-left: 10px;
+}
+.img-articulo-tipo-1 {
+  width: 25rem;
+  height: auto;
+}
+.img-articulo-tipo-2 {
+  width: 25rem;
+  height: auto;
+}
+@media only screen and (max-width: 900px) {
+  .seccion-articulos-blog-1,
+  .seccion-articulos-blog-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .container-blog-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    gap: 10px;
+    margin: 0;
+  }
+  .container-blog-2 {
+    background-color: #0facb3;
+    border-radius: 0.625rem;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    gap: 10px;
+    margin: 0;
+  }
+  .img-articulo-tipo-1 {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .img-articulo-tipo-2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+/*-----------------------------------FIN BLOG-----------------------------------------------*/
+
+/*-----------------------------------INICIO CONTACTO--------------------------------------------*/
+.container-formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 10%;
+  gap: 30px;
+  opacity: 0.8;
+}
+.formulario-fiel {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #fafafa;
+  box-shadow: 0px 7px 9px rgba(0, 0, 0, 2);
+  border-radius: 7px;
+  background-color: #0facb3;
+  text-align: center;
+}
+.textarea-comentario {
+  width: 100%;
+  height: 6.25rem;
+}
+.iframe-contacto {
+  box-shadow: 0px 7px 9px rgba(0, 0, 0, 2);
+}
+.formulario-fiel input,
+textarea {
+  color: #524e4e;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
+  border: #0facb3 solid 0px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  padding: 0.125rem;
+  margin-bottom: 0.625rem;
+  width: 100%;
+  height: 1.875rem;
+}
+.enviarFormulario {
+  background-color: #fafafa;
+  color: #0facb3;
+}
+.enviarFormulario:hover {
+  background-color: rgb(242, 248, 248);
+  transform: scale(0.9);
+}
+
+/*---------------------------FIN FORMULARIO-------------------------------------*/
+
+@media only screen and (max-width: 900px) {
+  /* iPad */
+  .container-formulario {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .titulo-contacto {
+    max-width: 100%;
+  }
+  .contactanos {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container-formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    margin: 0;
+    color: #fafafa;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .formulario-fiel {
+    width: 100%;
+    height: auto;
+  }
+  .iframe-contacto {
+    max-width: 100%;
+  }
+}
+/*-----------------------------------FIN CONTACTO--------------------------------------------*/
+
+/*-----------------------------------INICIO CONVENIO-----------------------------------------*/
+.seccion-beneficios-convenio {
+  padding-top: 2rem;
+  max-width: 100%;
+  max-height: 100%;
+  flex-wrap: wrap;
+}
+.container-card-beneficios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.contenedor-titulo-convenios {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.card-div-beneficios-1 {
+  color: #333;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+  text-align: center;
+  background-color: #0facb3;
+}
+.card-div-beneficios-2 {
+  color: #333;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+  text-align: center;
+  background-color: #facb3a;
+}
+
+.card-div-beneficios-1 h3,
+.card-div-beneficios-2 h3 {
+  padding-top: 8rem;
+}
+.titulo-beneficios {
+  margin-bottom: 0.625rem;
+}
+.card-div-beneficios-1 {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.1);
+}
+
+.card-div-beneficios-2 {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.1);
+}
+.seccion-empresas-convenio {
+  padding: 5rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+.articulo-empresas-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+.card-empresa {
+  width: 12.5rem;
+  height: 12.5rem;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.icon-empresa-colmena {
+  width: 10rem;
+  height: auto;
+  margin-top: 2.625rem;
+}
+.icon-empresa-edental {
+  width: 10rem;
+  height: auto;
+  margin-top: 2rem;
+}
+.icon-empresa-nuevamasvida {
+  width: 10rem;
+  height: auto;
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  .card-div-beneficios-1,
+  .card-div-beneficios-2 {
+    max-width: 15rem;
+    height: 15rem;
+  }
+  .seccion-beneficios-convenio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 320px) {
+  .seccion-beneficios-convenio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .card-div-beneficios-1,
+  .card-div-beneficios-2 {
+    max-width: 15rem;
+    height: 15rem;
+  }
+  .card-div-beneficios-1 h3,
+  .card-div-beneficios-2 h3 {
+    padding-top: 5.2rem;
+  }
+}
+/*-----------------------------------FIN CONVENIO--------------------------------------------*/
+
+/*-----------------------------------INICIO NOSOTROS-----------------------------------------*/
+.seccion-nosotros {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 2rem 25rem 5rem 25rem;
+}
+
+.articulo-nosotros {
+  display: flex;
+  justify-content: center;
+}
+.imagen-clinica {
+  width: 600px;
+  height: auto;
+}
+.contenido-articulo-nosotros {
+  padding: 4rem 4rem 4rem 4rem;
+}
+
+.seccion-mision-vision {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 25rem 5rem 25rem;
+  gap: 5rem;
+}
+.articulo-mision-vision {
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #fafafa;
+  justify-self: center;
+  width: 25rem;
+  height: 25rem;
+  text-align: center;
+}
+.articulo-mision-vision p {
+  text-align: start;
+  margin-top: 1rem;
+}
+.articulo-mision-vision h2 {
+  margin-top: 1rem;
+}
+.icono-mision-vision {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  .seccion-nosotros {
+    padding: 0;
+    margin: 0;
+  }
+  .contenido-articulo-nosotros h1 {
+    font-size: 1.625rem;
+  }
+  .imagen-clinica {
+    margin-top: 5rem;
+    margin-left: 4rem;
+  }
+  .seccion-mision-vision {
+    padding: 2rem 0rem 2rem 0rem;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+  .articulo-mision-vision {
+    padding: 0;
+    margin: 0;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    width: 25rem;
+    height: 27rem;
+  }
+  .articulo-mision-vision p {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 320px) {
+  .imagen-clinica {
+    max-width: 100%;
+    height: auto;
+  }
+  .seccion-nosotros {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  .articulo-nosotros {
+    flex-wrap: wrap;
+  }
+  .contenido-articulo-nosotros {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .contenido-articulo-nosotros h1 {
+    font-size: 2rem;
+  }
+  .contenido-articulo-nosotros p {
+    margin-top: 1rem;
+  }
+
+  .seccion-mision-vision {
+    padding: 2rem 0rem 2rem 0rem;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+  .articulo-mision-vision {
+    padding: 0;
+    margin: 0;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    width: 25rem;
+    height: 27rem;
+  }
+  .articulo-mision-vision p {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+  }
+}
+/*-----------------------------------FIN NOSOTROS--------------------------------------------*/
