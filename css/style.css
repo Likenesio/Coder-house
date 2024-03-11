@@ -33,7 +33,11 @@ a {
   padding: 0.625rem;
   background-color: #fafafa;
 }
-.container-redes p img {
+.icon-telefono{
+  display: flex;
+  align-items: center;
+}
+.icon-telefono img{
   width: 0.625rem;
   height: 0.625rem;
   margin-right: 2px;
