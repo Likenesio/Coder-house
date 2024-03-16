@@ -8,13 +8,17 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-html {
+/* html {
   background-image: url(../images/noise.jpg);
   color: #524e4e;
+} */
+html{
+  background-color: #eefffb;
 }
 h1 {
   font-size: 1.5rem;
   text-align: center;
+  color: #1a5355;
 }
 ul {
   list-style: none;
@@ -31,7 +35,7 @@ a {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 0.625rem;
-  background-color: #fafafa;
+  background-color: #00a592;
 }
 .icon-telefono{
   display: flex;
@@ -44,7 +48,7 @@ a {
 }
 .container-redes p {
   font-size: 0.75rem;
-  color: #aba9aa;
+  color: #09272a;
   font-weight: bold;
   text-align: center;
   align-items: center;
@@ -63,10 +67,11 @@ a {
   margin: 0;
   gap: 0.625rem;
 }
-.icon-redes img {
+.icon-redes  img {
   width: 1.875rem;
   height: 1.875rem;
   cursor: pointer;
+  filter:  hue-rotate(60deg) brightness(0%)
 }
 /*-----------------------------------FIN DE REDES HEADER-----------------------------------*/
 
@@ -77,6 +82,8 @@ a {
   justify-content: center;
   border-top: #aba9aa ridge 1px;
   gap: 2rem;
+  background: linear-gradient(#d1f6f2, #f1fcfa);
+  zoom: 1;
 }
 .logo {
   width: 12.5rem;
@@ -90,20 +97,20 @@ a {
 .navbarLinks a {
   font-size: 0.9375rem;
   font-weight: bold;
-  color: #524e4e;
+  color: #09272a;
 }
 .navbarLinks a:hover {
-  color: #0facb3;
+  color: #27a5a5;
 }
 .btnAgendar,
 .btnObtenerCita,
 .btnHablemos,
 .enviarFormulario {
   text-align: center;
-  color: rgb(248, 248, 242);
-  background-color: #0facb3;
+  color: #f1fcfa;
+  background-color: #00a592;
   cursor: pointer;
-  border: #0facb3 solid 0px;
+  border: #00a592 solid 0px;
   border-radius: 25px;
   font-weight: bold;
   transition: all 0.3s ease;
@@ -113,10 +120,10 @@ a {
 .btnAgendar:hover,
 .btnObtenerCita:hover,
 .btnHablemos:hover {
-  color: #0facb3;
-  background-color: rgb(248, 248, 242);
+  color: #00a592;
+  background-color: #f1fcfa;
   transform: scale(0.9);
-  border: #0facb3 solid 2px;
+  border: #00a592 solid 2px;
 }
 /*-----------------------------------FIN NAVBAR HEADER-------------------------------------*/
 /*-----------------------------------INICIO TITULO DE PAGES---------------------------------*/
@@ -167,7 +174,7 @@ a {
 /*-----------------------------------COMIENZO PRESENTACION INDEX.HTML----------------------*/
 .img-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -188,7 +195,7 @@ a {
 }
 .parrafo-img {
   position: absolute;
-  color: rgb(255, 255, 255);
+  color: #fafafa;
   text-align: center;
   font-size: 3.75rem;
   font-weight: bold;
@@ -201,7 +208,7 @@ a {
 .seccion-profesionales {
   padding: 4rem;
 }
-.cards-container-presentacion {
+ .cards-container-presentacion {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -213,18 +220,17 @@ a {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 2rem;
-}
+} 
+
 .cards-container-presentacion li {
+  background: linear-gradient(#4ac4c2, #1d8284);
   display: block;
-  color: #fafafa;
-  background-color: #0facb3;
-  border: #0facb3 solid 3px;
-  box-shadow: #fafafa 2px 2px;
+  color: #f1fcfa;
   font-weight: bold;
-  border-radius: 0.5rem;
+  border-radius: 1.25rem;
   overflow: hidden;
   width: 20rem;
-  height: auto;
+  height: 20rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -244,7 +250,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #0facb3;
+  background-color: #00a592;
   padding: 10rem 10rem 10rem 10rem;
   gap: 20rem;
 }
@@ -253,14 +259,14 @@ a {
   flex-direction: column;
   text-align: start;
   font-size: 1rem;
-  color: #524e4e;
+  color: #f1fcfa;
 }
 .card-footer a {
-  color: #524e4e;
+  color: #f1fcfa;
   text-decoration: none;
 }
 .card-footer a:hover {
-  color: #fafafa;
+  color: #003432;
 }
 .card-footer li {
   margin-top: 0.4625rem;
