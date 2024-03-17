@@ -712,7 +712,7 @@ textarea {
 }
 .articulo-mision-vision {
   padding: 1rem 1rem 1rem 1rem;
-  background-color: #fafafa;
+  background: linear-gradient(#d1f6f2, #f1fcfa);
   justify-self: center;
   width: 25rem;
   height: 25rem;
