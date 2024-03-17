@@ -71,20 +71,20 @@
             <h1 class="titulo">Contáctanos</h1>
           </div>
         </section>
-        <section class="container-formulario" id="formulario">
-          <form action="POST">
+        <section class="container-formulario" id="form">
+          <form action="https://formspree.io/f/mdoqevlj" method="POST">
             <fieldset class="formulario-fiel">
-              <label for="nombre">Nombre:</label>
-              <input type="text" name="nombre" id="nombre" required />
-              <label for="apellido">Apellido:</label>
-              <input type="text" name="apellido" id="apellido" required />
+              <label for="name">Nombre:</label>
+              <input type="text" name="name" id="name" required />
+              <label for="lastname">Apellido:</label>
+              <input type="text" name="lastname" id="lastname" required />
               <label for="fono">Contacto:</label>
               <input type="text" name="fono" id="fono" required />
               <label for="email">Email:</label>
               <input type="email" name="email" id="email" required />
-              <label for="comentario">¿En qué podemos ayudarte?</label>
-              <textarea class="textarea-comentario"
-                name="comentario"
+              <label for="message">¿En qué podemos ayudarte?</label>
+              <textarea type="textarea" class="textarea-comentario"
+                name="message"
                 rows="5"
               ></textarea>
               <button class="enviarFormulario" id="enviar" type="submit">
