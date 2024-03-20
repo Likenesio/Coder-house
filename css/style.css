@@ -405,13 +405,8 @@ a {
 :is(.card-blogGrid, .card2-blogGrid, .card3-blogGrid) img {
   grid-area: img;
   width: 20rem;
-  height: 20rem;
+  height: auto;
   padding: 1rem;
-}
-.contenido-blogGrid{
-  grid-area: contenido;
-  justify-self: center;
-  color: #09262a;
 }
 :is(.card-blogGrid, .card2-blogGrid, .card3-blogGrid) {
   display: grid;
@@ -421,6 +416,14 @@ a {
   justify-items: center;
   border-radius: 1.25rem;
   gap: 0.125rem;
+}
+.contenido-blogGrid{
+  grid-area: contenido;
+  width: 20rem;
+  height: auto;
+  padding: 1rem;
+  justify-self: center;
+  color: #09262a;
 }
 :is(.card-blogGrid, .card3-blogGrid) {
   grid-template-areas: "img contenido";
@@ -446,7 +449,7 @@ a {
       "tres tres";
   }
 }
-@media screen and (max-width: 853px) {
+@media screen and (max-width: 800px) {
   .seccion-blogGrid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -473,7 +476,7 @@ a {
 /*-----------------------------------FIN BLOG-----------------------------------------------*/
 
 /*-----------------------------------INICIO CONTACTO--------------------------------------------*/
-.container-formulario {
+/* .container-formulario {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -528,7 +531,7 @@ textarea {
 .enviarFormulario:hover {
   background-color: rgb(242, 248, 248);
   transform: scale(0.9);
-}
+} */
 
 /*---------------------------FIN FORMULARIO-------------------------------------*/
 
@@ -800,86 +803,83 @@ textarea {
   }
 }
 /*-----------------------------------FIN NOSOTROS--------------------------------------------*/
-.seccion-blogGrid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas:
-    ". uno uno uno . ."
-    ". . dos dos dos ."
-    ". tres tres tres . .";
-  justify-content: center;
+
+.seccion-contacto-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: ". formulario map ."
+  ". . . .";
   gap: 1rem;
-  padding: 2rem;
-}
-:is(.card-blogGrid, .card2-blogGrid, .card3-blogGrid) img {
-  grid-area: img;
-  width: 20rem;
-  height: auto;
-  padding: 1rem;
-}
-:is(.card-blogGrid, .card2-blogGrid, .card3-blogGrid) {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
+  padding-top: 2rem;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
-  border-radius: 1.25rem;
-  gap: 0.125rem;
 }
-.contenido-blogGrid{
-  grid-area: contenido;
-  width: 20rem;
+form{
+  grid-area: formulario;
+  max-width:100%;
   height: auto;
-  padding: 1rem;
-  justify-self: center;
+}
+.formulario-flex{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: .3125rem;
+  padding: 2rem;
+  background-color: #49c5c5;
+  border-radius: 1.25rem;
+  border: 0;
+  background: linear-gradient(#49c5c5, #6ddbd8);
+}
+.mapa{
+  grid-area:map;
+}
+.formulario-flex input{
+  max-width: 100%;
+  height: 1.875rem;
+  border: none;
+}
+.formulario-flex label{
+  color: #f1fcfa;
+  font-size: .75rem;
+}
+.formulario-flex input,
+textarea {
   color: #09262a;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  width: 100%;
 }
-:is(.card-blogGrid, .card3-blogGrid) {
-  grid-template-areas: "img contenido";
-  background-color: #d1f6f3;
+.enviarFormulario {
+  background-color: #fafafa;
+  color: #0facb3;
 }
-.card-blogGrid {
-  grid-area: uno;
+.enviarFormulario:hover {
+  background-color: rgb(242, 248, 248);
+  transform: scale(0.9);
 }
-.card3-blogGrid {
-  grid-area: tres;
-}
-.card2-blogGrid {
-  grid-template-areas: "contenido img";
-  background-color: #a3ece7;
-  grid-area: dos;
-}
-@media screen and (max-width: 1100px) and (min-width:900px){
-  .seccion-blogGrid{
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "uno uno"
-      "dos dos"
-      "tres tres";
+@media only screen and (max-width: 1040px) and (min-width: 701px){
+  .seccion-contacto-grid{
+
+    grid-template-columns: auto 2fr 2fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: ". formulario map ."
+    ". . . .";
   }
 }
-@media screen and (max-width: 800px) {
-  .seccion-blogGrid {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "uno"
-      "dos"
-      "tres";
+@media only screen and (max-width: 700px) and (min-width: 320px) {
+  .seccion-contacto-grid{
+    grid-template-columns:repeat(auto-fit, minmax(48%, 1fr));
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "formulario"
+    "map"
+    ".";
+    padding-left:.625rem;
+    padding-right:.625rem;;
   }
-  
-  :is(.card-blogGrid, .card3-blogGrid) {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "img"
-      "contenido";
-      justify-self: center;
-  }
-  .card2-blogGrid {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "contenido"
-      "img";
-      justify-self: center;
-    }
+
 }

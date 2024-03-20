@@ -72,53 +72,44 @@
     <main>
       <section class="seccion-titulo">
         <div class="div-titulo">
-          <h1 class="titulo">Blog</h1>
+          <h1 class="titulo">Contáctanos</h1>
         </div>
       </section>
-      <section class="seccion-blogGrid">
-        <article class="card-blogGrid">
-          <img
-            src="../images/blanqueamiento.jpg"
-            alt="Imagen de un blanqueamiento dental"
-          />
-          <div class="contenido-blogGrid">
-            <h2>Blanqueamiento dental</h2>
-            <p>
-              El blanqueamiento dental es un procedimiento estético que ayuda a
-              aclarar el color de los dientes. Se realiza mediante geles o
-              láser, eliminando manchas y devolviendo una sonrisa más brillante.
-            </p>
+      <section class="seccion-contacto-grid" id="form">
+        <form action="https://formspree.io/f/mdoqevlj" method="POST">
+          <fieldset class="formulario-flex">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" required />
+            <label for="lastname">Apellido:</label>
+            <input type="text" name="lastname" id="lastname" required />
+            <label for="fono">Contacto:</label>
+            <input type="text" name="fono" id="fono" required />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+            <label for="message">¿En qué podemos ayudarte?</label>
+            <textarea type="textarea" class="textarea-comentario"
+              name="message"
+              rows="5"
+            ></textarea>
+            <div>
+            <button class="enviarFormulario" id="enviar" type="submit">
+              Enviar
+            </button>
           </div>
-        </article>
-        <article class="card2-blogGrid">
-          <div class="contenido-blogGrid">
-            <h2>Ortodoncia</h2>
-            <p>
-              La ortodoncia corrige la posición de los dientes y la mandíbula para
-              lograr una mordida adecuada. Los brackets y alineadores invisibles
-              son comunes en este tratamiento.
-            </p>
-          </div>
-          <img
-            src="../images/ortodoncia.jpg"
-            alt="Imagen de un blanqueamiento dental"
-          />
-        </article>
-        <article class="card3-blogGrid">
-          <img
-            src="../images/implante-dental.jpg"
-            alt="Imagen de un blanqueamiento dental"
-          />
-          <div class="contenido-blogGrid">
-            <h2>Implante dental</h2>
-            <p>
-              Los implantes dentales son una excelente opción para reemplazar
-              dientes perdidos. Consisten en una raíz artificial de titanio que se
-              coloca en el hueso maxilar y se cubre con una corona dental.
-            </p>
-          </div>
-        </article>
+          </fieldset>
+        </form>
+        <iframe
+          class="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d798.3846796379695!2d-73.05088214077355!3d-36.82957209873643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5d0cf9568d3%3A0x1af69d2909c343d1!2sSan%20Mart%C3%ADn%20-%20Caupolic%C3%A1n!5e0!3m2!1ses-419!2scl!4v1708527741644!5m2!1ses-419!2scl"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
+    
     </main>
     <footer class="footer-container">
       <address class="card-footer">
