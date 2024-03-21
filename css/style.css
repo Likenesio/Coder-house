@@ -806,7 +806,7 @@ textarea {
 
 .seccion-contacto-grid{
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: ". formulario map ."
   ". . . .";
@@ -856,6 +856,9 @@ textarea {
 .enviarFormulario {
   background-color: #fafafa;
   color: #0facb3;
+}
+.formulario-flex div{
+  padding-top: 1.5625rem;
 }
 .enviarFormulario:hover {
   background-color: rgb(242, 248, 248);
