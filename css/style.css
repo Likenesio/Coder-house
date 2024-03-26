@@ -476,62 +476,89 @@ a {
 /*-----------------------------------FIN BLOG-----------------------------------------------*/
 
 /*-----------------------------------INICIO CONTACTO--------------------------------------------*/
-/* .container-formulario {
-  display: flex;
-  flex-direction: row;
+.seccion-contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    ". formulario map ."
+    ". . . .";
+  gap: 1rem;
+  padding-top: 2rem;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
-  color: #fafafa;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-bottom: 10%;
-  gap: 30px;
-  opacity: 0.8;
 }
-.formulario-fiel {
+form {
+  grid-area: formulario;
   max-width: 100%;
   height: auto;
-  padding: 20px;
-  border: 1px solid #fafafa;
-  box-shadow: 0px 7px 9px rgba(0, 0, 0, 2);
-  border-radius: 7px;
-  background-color: #0facb3;
-  text-align: center;
 }
-.textarea-comentario {
-  width: 100%;
-  height: 6.25rem;
+.formulario-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3125rem;
+  padding: 1.25rem;
+  background-color: #49c5c5;
+  border-radius: 1.25rem;
+  border: 0;
+  background: linear-gradient(#49c5c5, #6ddbd8);
 }
-.iframe-contacto {
-  box-shadow: 0px 7px 9px rgba(0, 0, 0, 2);
+.mapa {
+  grid-area: map;
+  border-radius: 1.25rem;
 }
-.formulario-fiel input,
+.formulario-flex input {
+  height: 1.875rem;
+  border: none;
+}
+.formulario-flex label {
+  color: #f1fcfa;
+  font-size: 0.75rem;
+}
+.formulario-flex input,
 textarea {
-  color: #524e4e;
+  color: #09262a;
   font-family: "Montserrat", sans-serif;
-  background-color: #fafafa;
-  border: #0facb3 solid 0px;
+  border: none;
   font-size: 14px;
   cursor: pointer;
   border-radius: 0.5rem;
-  font-weight: bold;
-  padding: 0.125rem;
-  margin-bottom: 0.625rem;
-  width: 100%;
-  height: 1.875rem;
+  padding:.3125rem;
+  width: 90%;
 }
 .enviarFormulario {
   background-color: #fafafa;
   color: #0facb3;
 }
+.formulario-flex div {
+  padding-top: 0.9375rem;
+}
 .enviarFormulario:hover {
   background-color: rgb(242, 248, 248);
   transform: scale(0.9);
-} */
+}
+@media only screen and (max-width: 1040px) and (min-width: 701px) {
+  .seccion-contacto-grid {
+    grid-template-columns: auto 2fr 2fr auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      ". formulario map ."
+      ". . . .";
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 320px) {
+  .seccion-contacto-grid {
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "formulario"
+      "map"
+      ".";
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+}
 
 /*---------------------------FIN FORMULARIO-------------------------------------*/
 
@@ -803,87 +830,3 @@ textarea {
   }
 }
 /*-----------------------------------FIN NOSOTROS--------------------------------------------*/
-
-.seccion-contacto-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    ". formulario map ."
-    ". . . .";
-  gap: 1rem;
-  padding-top: 2rem;
-  justify-content: center;
-  align-items: center;
-}
-form {
-  grid-area: formulario;
-  max-width: 100%;
-  height: auto;
-}
-.formulario-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3125rem;
-  padding: 1.25rem;
-  background-color: #49c5c5;
-  border-radius: 1.25rem;
-  border: 0;
-  background: linear-gradient(#49c5c5, #6ddbd8);
-}
-.mapa {
-  grid-area: map;
-  border-radius: 1.25rem;
-}
-.formulario-flex input {
-  height: 1.875rem;
-  border: none;
-}
-.formulario-flex label {
-  color: #f1fcfa;
-  font-size: 0.75rem;
-}
-.formulario-flex input,
-textarea {
-  color: #09262a;
-  font-family: "Montserrat", sans-serif;
-  border: none;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 0.5rem;
-  padding: 0.125rem;
-  width: 90%;
-}
-.enviarFormulario {
-  background-color: #fafafa;
-  color: #0facb3;
-}
-.formulario-flex div {
-  padding-top: 0.9375rem;
-}
-.enviarFormulario:hover {
-  background-color: rgb(242, 248, 248);
-  transform: scale(0.9);
-}
-@media only screen and (max-width: 1040px) and (min-width: 701px) {
-  .seccion-contacto-grid {
-    grid-template-columns: auto 2fr 2fr auto;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      ". formulario map ."
-      ". . . .";
-  }
-}
-@media only screen and (max-width: 700px) and (min-width: 320px) {
-  .seccion-contacto-grid {
-    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "formulario"
-      "map"
-      ".";
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
-  }
-}
