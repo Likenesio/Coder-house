@@ -825,7 +825,7 @@ form{
   flex-direction: column;
   align-items:center;
   gap: .3125rem;
-  padding: 2rem;
+  padding: 1.25rem;
   background-color: #49c5c5;
   border-radius: 1.25rem;
   border: 0;
@@ -833,9 +833,9 @@ form{
 }
 .mapa{
   grid-area:map;
+  border-radius: 1.25rem;
 }
 .formulario-flex input{
-  max-width: 100%;
   height: 1.875rem;
   border: none;
 }
@@ -851,14 +851,15 @@ textarea {
   font-size: 14px;
   cursor: pointer;
   border-radius: 0.5rem;
-  width: 100%;
+  padding: .125rem;
+  width: 90%;
 }
 .enviarFormulario {
   background-color: #fafafa;
   color: #0facb3;
 }
 .formulario-flex div{
-  padding-top: 1.5625rem;
+  padding-top: .9375rem;
 }
 .enviarFormulario:hover {
   background-color: rgb(242, 248, 248);
