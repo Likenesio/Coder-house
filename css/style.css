@@ -236,7 +236,7 @@ a {
 .card-3 {
   background-image: url("../images/drgabriela-2.jpg");
 }
-:is(.card, .card-2, .card-3) {
+:is(.card-1, .card-2, .card-3) {
   max-width: 25rem;
   height: 400px;
   border-radius: 1.25rem;
