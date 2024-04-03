@@ -1,0 +1,22 @@
+
+h1{
+    font-size:$font-4xl;
+    color: map-get($color-black, 100);
+ }
+ h2{
+     font-size: $font-3xl;
+     color: map-get($color-black, 100);
+ }
+ h3{
+     font-size: $font-2xl;
+     color: map-get($color-black, 100);
+ }
+ h4{
+     font-size: $font-xl;
+     color: map-get($color-black, 100);
+ }
+ p{
+     font-size:$font-md;
+     font-family: $font-primary;
+     color: map-get($color-black, 100);
+ }

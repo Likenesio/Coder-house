@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/** FONT FAMILIES */
+/** TAMAÑO FONTS */
+/** 12px */
+/** 14px */
+/** 16px */
+/** 18px */
+/** 20px */
+/** 24px */
+/** 30px */
+/** 36px */
+/** 48px */
+/** 60px */
+/** 72px */
+/** 96px */
+/** 128px */
+/** FONT WEIGHTS */
+h1 {
+  font-size: 2.25rem;
+  color: #e7e7e7;
+}
+
+h2 {
+  font-size: 1.875rem;
+  color: #e7e7e7;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #e7e7e7;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #e7e7e7;
+}
+
+p {
+  font-size: 1rem;
+  font-family: var(--skull-font-primary, Inter var, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  color: #e7e7e7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #454545;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--skull-font-secondary, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif);
+  color: #f6f6f6;
+}
+
+ul {
+  list-style: none;
+  font-family: var(--skull-font-secondary, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif);
+  color: #f6f6f6;
+}
+
+/*# sourceMappingURL=style.css.map */
