@@ -1,0 +1,12 @@
+{
+  "name": "proyecto-desarrollo-web-coderhouse",
+  "version": "1.0.0",
+  "description": "Clínica Dental Dentomac es un proyecto diseñado y desarrollado como parte del programa de aprendizaje en la plataforma Coder House. Este proyecto ha sido concebido para explorar y aplicar una amplia gama de tecnologías web modernas, desde los fundamentos básicos hasta las prácticas más avanzadas en el desarrollo web contemporáneo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
