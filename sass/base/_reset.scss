@@ -5,7 +5,7 @@
     }
 
 html{
-    background-color: map-get($color-black, 800);
+    background-color: map-get($color-black, 950);
 }
 
 a{
@@ -17,4 +17,9 @@ ul{
     list-style: none;
     font-family: $font-secondary;
     color: map-get($color-black, 50);
+}
+
+header{
+    padding: 1rem;
+    background-color: map-get($color-black, 900);
 }

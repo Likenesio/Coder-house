@@ -15,6 +15,7 @@
 /** 96px */
 /** 128px */
 /** FONT WEIGHTS */
+/* BASE */
 h1 {
   font-size: 2.25rem;
   color: #e7e7e7;
@@ -48,7 +49,7 @@ p {
 }
 
 html {
-  background-color: #454545;
+  background-color: #000000;
 }
 
 a {
@@ -61,6 +62,69 @@ ul {
   list-style: none;
   font-family: var(--skull-font-secondary, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif);
   color: #f6f6f6;
+}
+
+header {
+  padding: 1rem;
+  background-color: #3d3d3d;
+}
+
+.flex-container {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.flex-container.wrap {
+  flex-wrap: wrap;
+}
+
+/* COMPONENTS*/
+.btn-primary {
+  text-align: center;
+  color: #f6f6f6;
+  background-color: #4f4f4f;
+  cursor: pointer;
+  border: #f6f6f6 solid 0px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: 8rem;
+  height: 3rem;
+}
+.btn-primary:hover {
+  color: #4f4f4f;
+  background-color: #f6f6f6;
+  transform: scale(0.9);
+  border: #454545 solid 2px;
+}
+
+.icon-p {
+  width: 1rem;
+  height: auto;
+  align-self: center;
+  justify-self: center;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+.icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  cursor: pointer;
+}
+
+.logo {
+  width: 12.5rem;
+  height: auto;
+}
+
+nav {
+  border-top: #aba9aa ridge 1px;
+}
+nav ul li a:hover {
+  color: #6d6d6d;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+nav {
+  border-top: #aba9aa ridge 1px;
+  ul {
+    li {
+      a {
+        &:hover {
+          color: map-get($color-black, 500);
+        }
+      }
+    }
+  }
+}

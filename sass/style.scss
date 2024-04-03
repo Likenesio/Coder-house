@@ -1,4 +1,13 @@
 @charset 'utf-8';
 @import './variables';
+/* BASE */
 @import './base/typografia';
 @import './base/reset.scss';
+@import "./base/utils"; 
+
+/* COMPONENTS*/
+@import './components/button';
+@import './components/icon-p.scss';
+@import './components/icon.scss';
+@import './components/logo.scss';
+@import './components/navbar.scss';
