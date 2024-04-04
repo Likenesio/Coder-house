@@ -1,5 +1,10 @@
-nav {
+.navbar {
   border-top: #aba9aa ridge 1px;
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   ul {
     li {
       a {
@@ -8,5 +13,14 @@ nav {
         }
       }
     }
+  }
+  &-items{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  &-logo{
+    width: 12.5rem;
+    height: auto;
   }
 }

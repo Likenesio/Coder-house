@@ -5,7 +5,16 @@
     }
 
 html{
-    background-color: map-get($color-black, 950);
+    background-color: map-get($color-black, 900);
+}
+body{
+        position: relative;
+        min-height: 100vh;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
 }
 
 a{
@@ -21,5 +30,4 @@ ul{
 
 header{
     padding: 1rem;
-    background-color: map-get($color-black, 900);
 }
