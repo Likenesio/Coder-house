@@ -1,8 +1,8 @@
 .btn-primary {
   text-align: center;
-  color: map-get($color-black, 50);
-  background-color: map-get($color-black, 950);
-  border: map-get($color-black,50) solid 1px;
+  color: map-get($color-black, 950);
+  background-color: map-get($color-black, 50);
+  border: map-get($color-black, 50) solid 1px;
   cursor: pointer;
   border-radius: 25px;
   font-weight: $font-medium;
@@ -10,9 +10,9 @@
   width: 8rem;
   height: 3rem;
   &:hover {
-    color: map-get($color-black, 950);
-    background-color: map-get($color-black, 50);
+    color: map-get($color-black, 50);
+    background-color: map-get($color-black, 950);
     transform: scale(0.9);
-    border: map-get($color-black, 950) solid 2px;
+    border: map-get($color-black, 50) solid 2px;
   }
 }

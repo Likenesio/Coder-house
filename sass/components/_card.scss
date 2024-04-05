@@ -28,7 +28,7 @@ $card-border: var(--#{$prefix}-card-border, map-get($color-black,950)) !default;
   
     &-image {
       width: 100%;
-      height: auto;
+      height: 280px;
     }
   
     &-text {
