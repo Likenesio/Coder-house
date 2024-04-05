@@ -9,17 +9,17 @@
   &.wrap {
     flex-wrap: wrap;
   }
-  &-img{
+  &-img {
     display: flex;
     gap: 10px;
   }
-  &-icon{
+  &-icon {
     display: flex;
-    gap:8px;
+    gap: 8px;
   }
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,11 +32,11 @@
     position: absolute;
     color: #fafafa;
     text-align: center;
-    font-size: $font-5xl;
-    font-weight: bold;
+    font-size: $font-7xl;
+    font-weight:$font-black;
     z-index: 1;
   }
-  &::after{
+  &::after {
     content: "";
     display: block;
     position: absolute;
@@ -47,4 +47,11 @@
     background: rgba(12, 12, 12, 0.5);
   }
 }
-
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 25rem));
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}

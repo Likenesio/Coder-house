@@ -1,0 +1,65 @@
+$card-bg: var(--#{$prefix}-card-bg,  map-get($color-black,50)) !default;
+$card-radius: var(--#{$prefix}-card-radius, 12px) !default;
+$card-border: var(--#{$prefix}-card-border, map-get($color-black,950)) !default;
+
+.card {
+    overflow: hidden;
+    position: relative;
+    transition: all .3s ease;
+    box-shadow: $shadow-xl;
+    border-radius: $card-radius;
+
+  
+    border: 1px solid $card-border;
+    background-color: $card-bg;
+  
+    &:hover {
+      box-shadow: $shadow-md;
+    }
+  
+    &-content {
+      padding: 24px 18px;
+    }
+  
+    &-title {
+      font-weight: $font-bold;
+      text-align: center;
+    }
+  
+    &-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    &-text {
+      margin-bottom: 24px;
+      color: map-get($color-black, 400);
+    }
+  
+    &-actions {
+      gap: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  
+  .cards-container {
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  
+    .card {
+      flex: 0 0 auto;
+      width: 100%;
+  
+      @media only screen and (max-width:768px) {
+        width: calc(50% - 8px);
+      }
+      @media only screen and (max-width:1200px) {
+        width: calc(25% - 12px);
+      }
+    }
+  }

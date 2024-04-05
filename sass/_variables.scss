@@ -14,6 +14,13 @@ $color-black:(
     950: #000000,
 )!default;
 
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
 $directions:(
   t: top,
   l: left,
@@ -55,3 +62,12 @@ $font-black: 900 !default;
 
 $font-primary: var(--#{$prefix}-font-primary, $font-sans);
 $font-secondary: var(--#{$prefix}-font-secondary, $font-serif);
+
+
+/* SHADOW */
+$shadow-color: var(--#{$prefix}-shadow-color, 51 65 85) !default;
+$shadow-sm: 0 1px 2px 0 rgb($shadow-color / 0.05) !default;
+$shadow: 0 1px 3px 0 rgb($shadow-color / 0.1), 0 1px 2px -1px rgb($shadow-color / 0.1) !default;
+$shadow-md: 0 4px 6px -1px rgb($shadow-color / 0.1), 0 2px 4px -2px rgb($shadow-color / 0.1) !default;
+$shadow-lg: 0 10px 15px -3px rgb($shadow-color / 0.1), 0 4px 6px -4px rgb($shadow-color / 0.1) !default;
+$shadow-xl: 0 20px 25px -5px rgb($shadow-color / 0.1), 0 8px 10px -6px rgb($shadow-color / 0.1) !default;
