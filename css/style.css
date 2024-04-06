@@ -108,12 +108,18 @@ section {
 .flex-container-footer {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   padding-bottom: 5em;
   padding-top: 5em;
   background-color: #6d6d6d;
+}
+@media only screen and (max-width: 768px) {
+  .flex-container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 .flex-container-footer address {
   font-size: 1rem;
@@ -218,6 +224,23 @@ section {
   gap: 16px;
   align-items: center;
 }
+@media only screen and (max-width: 900px) {
+  .navbar-items {
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    opacity: 0.8;
+    right: 0;
+    top: 21%;
+    padding-top: 5%;
+    background-color: #0facb3;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 3;
+  }
+}
 .navbar-logo {
   width: 12.5rem;
   height: auto;
@@ -244,11 +267,16 @@ section {
 }
 .card-image {
   width: 100%;
-  height: 280px;
+  height: 270px;
+}
+@media only screen and (max-width: 768px) {
+  .card-image {
+    height: auto;
+  }
 }
 .card-text {
   margin-bottom: 24px;
-  color: #888888;
+  color: #454545;
 }
 .card-actions {
   gap: 16px;
@@ -277,6 +305,48 @@ section {
   .cards-container .card {
     width: calc(25% - 12px);
   }
+}
+
+.burger {
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  padding-top: 5%;
+  padding-right: 5%;
+  border: none;
+  list-style: none;
+  z-index: 10;
+}
+@media only screen and (max-width: 900px) {
+  .burger {
+    position: absolute;
+    display: block;
+    right: 0.625rem;
+    z-index: 10;
+  }
+}
+
+.burger div {
+  margin-top: 0.2rem;
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #0facb3;
+  border-radius: 0.625rem;
+  position: relative;
+  transition: all 0.3s linear;
+  transform-origin: 0.0621rem;
+}
+
+.nav-active {
+  transform: translateX(0);
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /*# sourceMappingURL=style.css.map */

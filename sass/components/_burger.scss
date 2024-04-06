@@ -1,0 +1,37 @@
+.burger {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    padding-top: 5%;
+    padding-right: 5%;
+    border: none;
+    list-style: none;
+    z-index: 10;
+    @media only screen and (max-width: 900px) {
+            position: absolute;
+            display: block;
+            right: 0.625rem;
+            z-index: 10;
+      }
+  }
+  .burger div {
+    margin-top: 0.2rem;
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #0facb3;
+    border-radius: 0.625rem;
+    position: relative;
+    transition: all 0.3s linear;
+    transform-origin: 0.0621rem;
+  }
+
+  .nav-active {
+    transform: translateX(0);
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }

@@ -14,12 +14,27 @@
       }
     }
   }
-  &-items{
+  &-items {
     display: flex;
     gap: 16px;
     align-items: center;
+    @media only screen and (max-width: 900px) {
+      position: fixed;
+      width: 40%;
+      height: 100vh;
+      opacity: 0.8;
+      right: 0;
+      top: 21%;
+      padding-top: 5%;
+      background-color: #0facb3;
+      flex-direction: column;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 3;
+    }
   }
-  &-logo{
+  &-logo {
     width: 12.5rem;
     height: auto;
   }
