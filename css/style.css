@@ -21,6 +21,11 @@ h1 {
   font-size: 3rem;
   color: #e7e7e7;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
 
 h2 {
   font-size: 1.875rem;
@@ -139,9 +144,9 @@ section {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   max-width: 100%;
   max-height: 60vh;
   overflow: hidden;
@@ -149,11 +154,16 @@ section {
 }
 .container-parrafo {
   position: absolute;
-  color: #fafafa;
-  text-align: center;
+  color: #f6f6f6;
   font-size: 4.5rem;
   font-weight: 900;
+  text-align: center;
   z-index: 1;
+}
+@media (max-width: 768px) {
+  .container-parrafo {
+    font-size: 3rem;
+  }
 }
 .container::after {
   content: "";
@@ -311,8 +321,7 @@ section {
   display: none;
   position: fixed;
   cursor: pointer;
-  padding-top: 5%;
-  padding-right: 5%;
+  margin-top: 1%;
   border: none;
   list-style: none;
   z-index: 10;
@@ -327,10 +336,10 @@ section {
 }
 
 .burger div {
-  margin-top: 0.2rem;
+  margin-top: 0.3125rem;
   width: 2rem;
   height: 0.25rem;
-  background-color: #0facb3;
+  background-color: #e7e7e7;
   border-radius: 0.625rem;
   position: relative;
   transition: all 0.3s linear;
