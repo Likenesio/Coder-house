@@ -17,7 +17,7 @@
     gap: 8px;
   }
   &.bg {
-    background-color: map-get($color-black, 500);
+    background: linear-gradient(to right, map-get($gradiant,50), map-get($gradiant,100));
   }
   &.pd{
     padding-top: 1rem;
@@ -28,9 +28,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding-bottom: 5em;
-    padding-top: 5em;
-    background-color: map-get($color-black, 500);
+    padding:20px 0px;
+    border-top: map-get($color-black, 50) ridge 1px;
     @media only screen and (max-width:768px) {
       display: flex;
       flex-direction: column;

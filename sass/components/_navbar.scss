@@ -1,5 +1,5 @@
 .navbar {
-  border-top: #aba9aa ridge 1px;
+  border-top: map-get($color-black, 50) ridge 1px;
   gap: 16px;
   display: flex;
   align-items: center;
@@ -25,8 +25,8 @@
       opacity: 0.8;
       right: 0;
       top: 21%;
-      padding-top: 5%;
-      background-color: #0facb3;
+      padding: 5% 0%;
+      background: linear-gradient(to right, map-get($gradiant,50), map-get($gradiant,100));
       flex-direction: column;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
       transform: translateX(100%);

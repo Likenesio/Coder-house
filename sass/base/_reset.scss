@@ -5,7 +5,7 @@
     }
 
 html{
-    background-color: map-get($color-black, 900);
+    background: linear-gradient(to right, map-get($gradiant,50), map-get($gradiant,100));
 }
 body{
         position: relative;

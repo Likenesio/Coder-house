@@ -13,6 +13,10 @@ $color-black:(
     900: #3d3d3d,
     950: #000000,
 )!default;
+$gradiant:(
+    50: #141E30,
+    100:#243B55
+)!default;
 
 $breakpoints: (
   sm: 576px,

@@ -55,7 +55,7 @@ p {
 }
 
 html {
-  background-color: #3d3d3d;
+  background: linear-gradient(to right, #141E30, #243B55);
 }
 
 body {
@@ -104,7 +104,7 @@ section {
   gap: 8px;
 }
 .flex-container.bg {
-  background-color: #6d6d6d;
+  background: linear-gradient(to right, #141E30, #243B55);
 }
 .flex-container.pd {
   padding-top: 1rem;
@@ -115,9 +115,8 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 5em;
-  padding-top: 5em;
-  background-color: #6d6d6d;
+  padding: 20px 0px;
+  border-top: #f6f6f6 ridge 1px;
 }
 @media only screen and (max-width: 768px) {
   .flex-container-footer {
@@ -219,7 +218,7 @@ section {
 }
 
 .navbar {
-  border-top: #aba9aa ridge 1px;
+  border-top: #f6f6f6 ridge 1px;
   gap: 16px;
   display: flex;
   align-items: center;
@@ -242,8 +241,8 @@ section {
     opacity: 0.8;
     right: 0;
     top: 21%;
-    padding-top: 5%;
-    background-color: #0facb3;
+    padding: 5% 0%;
+    background: linear-gradient(to right, #141E30, #243B55);
     flex-direction: column;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transform: translateX(100%);
