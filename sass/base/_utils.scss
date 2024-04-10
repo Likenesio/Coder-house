@@ -20,15 +20,17 @@
     background: linear-gradient(to right, map-get($gradiant,50), map-get($gradiant,100));
   }
   &.pd{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0rem;
+  }
+  &.text{
+    font-size: $font-xl;
   }
   &-footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding:20px 0px;
+    padding:5rem 0px;
     border-top: map-get($color-black, 50) ridge 1px;
     @media only screen and (max-width:768px) {
       display: flex;
@@ -99,5 +101,10 @@
 }
 
 .seccion{
-  padding: 4rem 0rem;
+  &-pd-bt{
+    padding-bottom: 3rem;
+  }
+  &-pd-tp{
+    padding-top: 3rem;
+  }
 }

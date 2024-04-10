@@ -6,7 +6,7 @@ $card-border: var(--#{$prefix}-card-border, map-get($color-black,950)) !default;
     overflow: hidden;
     position: relative;
     transition: all .3s ease;
-    box-shadow: $shadow-xl;
+    box-shadow: $shadow-md;
     border-radius: $card-radius;
 
   
@@ -16,7 +16,11 @@ $card-border: var(--#{$prefix}-card-border, map-get($color-black,950)) !default;
     &:hover {
       box-shadow: $shadow-md;
     }
-  
+    &-text {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: map-get($color-black, 500);
+    }
     &-content {
       padding: 24px 18px;
     }
@@ -32,11 +36,6 @@ $card-border: var(--#{$prefix}-card-border, map-get($color-black,950)) !default;
       @media only screen and (max-width:768px) {
         height: auto;
       }
-    }
-  
-    &-text {
-      margin-bottom: 24px;
-      color: map-get($color-black, 800);
     }
   
     &-actions {

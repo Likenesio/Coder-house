@@ -103,15 +103,17 @@ ul {
   background: linear-gradient(to right, #141E30, #243B55);
 }
 .flex-container.pd {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0rem;
+}
+.flex-container.text {
+  font-size: 1.25rem;
 }
 .flex-container-footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 20px 0px;
+  padding: 5rem 0px;
   border-top: #f6f6f6 ridge 1px;
 }
 @media only screen and (max-width: 768px) {
@@ -180,8 +182,11 @@ ul {
   align-items: center;
 }
 
-.seccion {
-  padding: 4rem 0rem;
+.seccion-pd-bt {
+  padding-bottom: 3rem;
+}
+.seccion-pd-tp {
+  padding-top: 3rem;
 }
 
 /* COMPONENTS*/
@@ -265,13 +270,18 @@ ul {
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease;
-  box-shadow: 0 20px 25px -5px rgb(var(--skull-shadow-color, 51 65 85)/0.1), 0 8px 10px -6px rgb(var(--skull-shadow-color, 51 65 85)/0.1);
+  box-shadow: 0 4px 6px -1px rgb(var(--skull-shadow-color, 51 65 85)/0.1), 0 2px 4px -2px rgb(var(--skull-shadow-color, 51 65 85)/0.1);
   border-radius: var(--skull-card-radius, 12px);
   border: 1px solid var(--skull-card-border, #000000);
   background-color: var(--skull-card-bg, #f6f6f6);
 }
 .card:hover {
   box-shadow: 0 4px 6px -1px rgb(var(--skull-shadow-color, 51 65 85)/0.1), 0 2px 4px -2px rgb(var(--skull-shadow-color, 51 65 85)/0.1);
+}
+.card-text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #6d6d6d;
 }
 .card-content {
   padding: 24px 18px;
@@ -288,10 +298,6 @@ ul {
   .card-image {
     height: auto;
   }
-}
-.card-text {
-  margin-bottom: 24px;
-  color: #454545;
 }
 .card-actions {
   gap: 16px;
