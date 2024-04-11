@@ -311,8 +311,15 @@ ul {
   font-weight: 700;
   text-align: center;
 }
+.card-title-black {
+  color: #3d3d3d;
+}
 .card-icon {
   width: 3.125rem;
+  height: auto;
+}
+.card-wh-title {
+  width: 300px;
   height: auto;
 }
 .card-image {

@@ -44,8 +44,15 @@ $card-border: var(
     font-weight: $font-bold;
     text-align: center;
   }
+  &-title-black{
+    color: map-get($color-black, 900);
+  }
   &-icon {
     width: 3.125rem;
+    height: auto;
+  }
+  &-wh-title{
+    width: 300px;
     height: auto;
   }
   &-image {
