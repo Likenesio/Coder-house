@@ -1,67 +1,86 @@
-$card-bg: var(--#{$prefix}-card-bg,  map-get($color-black,50)) !default;
+$card-bg: var(--#{$prefix}-card-bg, map-get($color-black, 50)) !default;
 $card-radius: var(--#{$prefix}-card-radius, 12px) !default;
-$card-border: var(--#{$prefix}-card-border, map-get($color-black,950)) !default;
+$card-border: var(
+  --#{$prefix}-card-border,
+  map-get($color-black, 950)
+) !default;
 
 .card {
-    overflow: hidden;
-    position: relative;
-    transition: all .3s ease;
-    box-shadow: $shadow-md;
-    border-radius: $card-radius;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: $shadow-md;
+  border-radius: $card-radius;
+  border: 1px solid $card-border;
+  background-color: $card-bg;
 
-  
-    border: 1px solid $card-border;
-    background-color: $card-bg;
-  
-    &:hover {
-      box-shadow: $shadow-md;
-    }
-    &-text {
-      margin-top: 5px;
-      margin-bottom: 5px;
-      color: map-get($color-black, 500);
-    }
-    &-content {
-      padding: 24px 18px;
-    }
-  
-    &-title {
-      font-weight: $font-bold;
-      text-align: center;
-    }
-  
-    &-image {
-      width: 100%;
-      height: 270px;
-      @media only screen and (max-width:768px) {
-        height: auto;
-      }
-    }
-  
-    &-actions {
-      gap: 16px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: flex-start;
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+  &.wh{
+    max-width:100%;
+    height: 25rem;
+  }
+  &.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: .1875rem;
+  }
+  &.pd{
+    padding: 10px 20px;
+  }
+  &-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: map-get($color-black, 500);
+  }
+  &-content {
+    padding: 24px 18px;
+  }
+
+  &-title {
+    font-weight: $font-bold;
+    text-align: center;
+  }
+  &-icon {
+    width: 3.125rem;
+    height: auto;
+  }
+  &-image {
+    width: 100%;
+    height: 270px;
+    @media only screen and (max-width: 768px) {
+      height: auto;
     }
   }
-  
-  .cards-container {
+
+  &-actions {
     gap: 16px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.cards-container {
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  &-text {
     align-items: flex-start;
-  
-    .card {
-      flex: 0 0 auto;
-      width: 100%;
-  
-      @media only screen and (max-width:768px) {
-        width: calc(50% - 8px);
-      }
-      @media only screen and (max-width:1200px) {
-        width: calc(25% - 12px);
-      }
+  }
+  .card {
+    flex: 0 0 auto;
+    width: 100%;
+
+    @media only screen and (max-width: 768px) {
+      width: calc(50% - 8px);
+    }
+    @media only screen and (max-width: 1200px) {
+      width: calc(25% - 12px);
     }
   }
+}
