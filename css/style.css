@@ -185,6 +185,9 @@ ul {
   max-width: 100%;
   height: auto;
 }
+.grid-container-title {
+  color: #f6f6f6;
+}
 
 .seccion-pd-bt {
   padding-bottom: 3rem;

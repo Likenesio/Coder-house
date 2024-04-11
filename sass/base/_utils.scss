@@ -102,6 +102,9 @@
     max-width: 100%;
     height: auto;
   }
+  &-title{
+    color: map-get($color-black, 50);
+  }
 }
 
 .seccion{
