@@ -24,11 +24,11 @@
     <meta property="og:description" content="Clinica dental de concepción, con los mejores profesionales"/>
     <meta property="og:type" content="website" />
     <meta property="og:image" content="logo_circular.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <title>dentomac - convenios</title>
   </head>
   <body">
-    <script src="../js/app.js"></script>
     <header>
       <div class="flex-container wrap bg pd">
         <div class="flex-container-icon">
@@ -69,7 +69,7 @@
         <div class="line3"></div>
       </div>
       <nav class="navbar">
-        <a href="index.html">
+        <a href="../index.html">
           <img
             class="navbar-logo"
             src="../images/logocircular.png"
@@ -93,12 +93,50 @@
       </nav>
     </header>
     <main>
-        <section class="seccion-titulo">
-          <div class="div-titulo">
-            <h1 class="titulo">Convenios</h1>
+      <section class="seccion-pd-tp flex-container">
+        <div class="card card-wh-title">
+          <h1 class="card-title-black">Convenios</h1>
+        </div>
+      </section>
+      <section class="seccion-pd-tp">
+        <div class="grid-carrousel">
+          <article class="grid-carrousel-contenido">
+            <div class="grid-carrousel-item" id="itemCarrousel-1">
+              <div class="grid-carrousel-item-tarjeta">
+                <img class="grid-carrousel-item-img" src="../images/davila.png" alt="Imagen del logo en pequeño de la empresa Davila">
+              </div>
+              <div class="itemCarrouselArrows">
+                <i class="fas fa-chevron-left" onclick="moveCarousel('prev', 1)"></i>
+                <i class="fas fa-chevron-right" onclick="moveCarousel('next', 1)"></i>
+              </div>
+            </div>
+            <div class="grid-carrousel-item" id="itemCarrousel-2">
+              <div class="grid-carrousel-item-tarjeta">
+                <img class="grid-carrousel-item-img" src="../images/logo-red-clinica-regionales.png" alt="Imagen del logo en pequeño de la empresa Clinica Regionales">
+              </div>
+              <div class="itemCarrouselArrows">
+                <i class="fas fa-chevron-left" onclick="moveCarousel('prev', 2)"></i>
+                <i class="fas fa-chevron-right" onclick="moveCarousel('next', 2)"></i>
+              </div>
+            </div>
+            <div class="grid-carrousel-item" id="itemCarrousel-3">
+              <div class="grid-carrousel-item-tarjeta">
+                <img class="grid-carrousel-item-img" src="../images/Logo_bupa.png" alt="Imagen del logo en pequeño de la empresa Bupa">
+              </div>
+              <div class="itemCarrouselArrows">
+                <i class="fas fa-chevron-left" onclick="moveCarousel('prev', 3)"></i>
+                <i class="fas fa-chevron-right" onclick="moveCarousel('next', 3)"></i>
+              </div>
+            </div>
+          </article>
+          <div class="itemCarrouselArrows-contenido">
+            <a class="itemCarrouselArrows-circulo" onclick="moveCarousel('goTo', 1)">•</a>
+            <a class="itemCarrouselArrows-circulo" onclick="moveCarousel('goTo', 2)">•</a>
+            <a class="itemCarrouselArrows-circulo" onclick="moveCarousel('goTo', 3)">•</a>
           </div>
-        </section>
-        <section class="seccion-beneficios-convenio">
+        </div>
+      </section>  
+          <!--  <section class="seccion-beneficios-convenio">
           <div class="contenedor-titulo-convenios">
             <h2 class="titulo-beneficios">BENEFICIOS DENTALES</h2>
           </div>
@@ -112,35 +150,7 @@
               <h4>En el valor del arancel</h4>
             </div>
           </article>
-        </section>
-        <section class="seccion-empresas-convenio">
-          <div class="contenedor-titulo-convenios">
-            <h2 class="titulo-beneficios">CONVENIO EMPRESAS</h2>
-          </div>
-          <article class="articulo-empresas-cards">
-            <div class="card-empresa">
-              <img
-                class="icon-empresa-colmena"
-                src="../images/colmena-logo.png"
-                alt="logo en miniatura de la empresa Colmena"
-              />
-            </div>
-            <div class="card-empresa">
-              <img
-                class="icon-empresa-edental"
-                src="../images/e.dental-logo.png"
-                alt="logo en miniatura de la empresa e-Dental"
-              />
-            </div>
-            <div class="card-empresa">
-              <img
-                class="icon-empresa-nuevamasvida"
-                src="../images/logo_nuevamasvida.png"
-                alt="logo en miniatura de la empresa Nueva más Vida"
-              />
-            </div>
-          </article>
-        </section>
+        </section> -->
       </main>
       <footer class="flex-container-footer">
         <address class="card-footer">
@@ -172,5 +182,6 @@
           </li>
         </ul>
       </footer>
+      <script src="../js/app.js"></script>
   </body>
 </html>
