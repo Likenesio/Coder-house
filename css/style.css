@@ -80,6 +80,17 @@ ul {
   color: #f6f6f6;
 }
 
+input[type=text] {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #f6f6f6;
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+  cursor: pointer;
+}
+
 .flex-container {
   gap: 20px;
   display: flex;
@@ -511,6 +522,65 @@ ul {
 }
 .itemCarrouselArrows-circulo:hover {
   color: #f6f6f6;
+}
+
+.form {
+  width: 100%;
+  height: 50px;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .form {
+    width: 85%;
+  }
+}
+.form:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #2ecece;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+.form-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #f6f6f6;
+}
+.form-label:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #2ecece;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+.form-spam-text {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: #f6f6f6;
+}
+input:focus + .form-label .form-spam-text, input:valid + .form-label .form-spam-text {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #2ecece;
+}
+input:focus + .form-label:after, input:valid + .form-label:after {
+  transform: translateX(0%);
 }
 
 /*# sourceMappingURL=style.css.map */
