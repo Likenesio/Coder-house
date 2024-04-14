@@ -99,45 +99,63 @@
       </nav>
     </header>
     <main>
-      <section class="seccion-titulo">
-        <div class="div-titulo">
-          <h1 class="titulo">Contáctanos</h1>
+      <section class="seccion-pd-tp seccion-pd-bt flex-container">
+        <div class="card card-wh-title">
+          <h1 class="card-title-black">Contacto</h1>
         </div>
       </section>
-      <section class="seccion-contacto-grid" id="form">
-        <form action="https://formspree.io/f/mdoqevlj" method="POST">
-          <fieldset class="formulario-flex">
-            <label for="name">Nombre:</label>
-            <input type="text" name="name" id="name" required />
-            <label for="lastname">Apellido:</label>
-            <input type="text" name="lastname" id="lastname" required />
-            <label for="fono">Contacto:</label>
-            <input type="text" name="fono" id="fono" required />
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required />
-            <label for="message">¿En qué podemos ayudarte?</label>
-            <textarea
-              type="textarea"
-              class="textarea-comentario"
-              name="message"
-              rows="5"
-            ></textarea>
+      <section class="seccion-pd-tp seccion-pd-bt" id="form">
+        <div class="grid-container">
+          <form class="flex-container column">
+            <div class="form">
+              <input name="name" id="name" type="text" required />
+              <label for="name" class="form-label">
+                <span class="form-spam-text">Nombre</span>
+              </label>
+            </div>
+            <div class="form">
+              <input name="lastname" id="lastname" type="text" required />
+              <label for="lastname" class="form-label">
+                <span class="form-spam-text">Apellido</span>
+              </label>
+            </div>
+            <div class="form">
+              <input name="fono" id="fono" type="text" required />
+              <label for="fono" class="form-label">
+                <span class="form-spam-text">Teléfono</span>
+              </label>
+            </div>
+            <div class="form">
+              <textarea
+                type="textarea"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              <label class="form-label" for="message"
+                ><span class="form-spam-text"
+                  >¿En que te podemos ayudar?</span
+                ></label
+              >
+            </div>
             <div>
-              <button class="enviarFormulario" id="enviar" type="submit">
+              <button class="btn-primary" id="enviar" type="submit">
                 Enviar
               </button>
             </div>
-          </fieldset>
-        </form>
-        <iframe
-          class="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d798.3846796379695!2d-73.05088214077355!3d-36.82957209873643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5d0cf9568d3%3A0x1af69d2909c343d1!2sSan%20Mart%C3%ADn%20-%20Caupolic%C3%A1n!5e0!3m2!1ses-419!2scl!4v1708527741644!5m2!1ses-419!2scl"
-          width="100%"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+          </form>
+          <article>
+            <iframe
+              class="mapa"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d798.3846796379695!2d-73.05088214077355!3d-36.82957209873643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b5d0cf9568d3%3A0x1af69d2909c343d1!2sSan%20Mart%C3%ADn%20-%20Caupolic%C3%A1n!5e0!3m2!1ses-419!2scl!4v1708527741644!5m2!1ses-419!2scl"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </article>
+        </div>
       </section>
     </main>
     <footer class="flex-container-footer">

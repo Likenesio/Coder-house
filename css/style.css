@@ -579,12 +579,12 @@ input[type=text]::placeholder, textarea::placeholder {
   transition: all 0.3s ease;
   color: #f6f6f6;
 }
-input:focus + .form-label .form-spam-text, input:valid + .form-label .form-spam-text {
+input:focus + .form-label .form-spam-text, input:valid + .form-label .form-spam-text, textarea:focus + .form-label .form-spam-text, textarea:valid + .form-label .form-spam-text {
   transform: translateY(-150%);
   font-size: 14px;
   color: #2ecece;
 }
-input:focus + .form-label:after, input:valid + .form-label:after {
+input:focus + .form-label:after, input:valid + .form-label:after, textarea:focus + .form-label:after, textarea:valid + .form-label:after {
   transform: translateX(0%);
 }
 
