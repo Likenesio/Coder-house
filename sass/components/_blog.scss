@@ -1,0 +1,65 @@
+.blog {
+  width: 120rem;
+  height: 31.25rem;
+  &.radius-first {
+    border-radius: 45% 5%;
+    @media only screen and (max-width: 768px) {
+      border-radius: 25% 10%;
+    }
+  }
+  &.radius-second {
+    border-radius:5% 45% ;
+    @media only screen and (max-width: 768px) {
+      border-radius: 10% 25%;
+    }
+  }
+  &.color-primary{
+    background-color: map-get($color-circular, 150);
+  }
+  &.color-secondary{
+    background-color: map-get($color-circular, 100);
+  }
+  @media only screen and (max-width: 768px) {
+    max-width: auto;
+    height: auto;
+  }
+  &-content {
+    color: map-get($color-black, 50);
+    max-width: 400px;
+    height: auto;
+    @media only screen and (max-width: 768px) {
+      max-width: auto;
+      padding-top: 10px;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  }
+  &-title {
+    @media only screen and (max-width: 767px) {
+      font-size: $font-2xl;
+    }
+  }
+  &-image {
+    max-width: 500px;
+    height: 400px;
+    border-radius: 10% 30% 50% 70%;
+    padding: 10px 5px;
+    @media only screen and (max-width: 768px) {
+      max-width: 100%;
+      height: auto;
+      padding: 5px 5px;
+    }
+  }
+  &.pd-left {
+    padding-left: 10%;
+    @media only screen and (max-width: 768px) {
+      padding-left: 0px;
+    }
+  }
+  &.pd-right {
+    padding-right: 10%;
+    @media only screen and (max-width: 768px) {
+      padding-right: 0px;
+    }
+  }
+}
