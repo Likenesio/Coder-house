@@ -8,6 +8,9 @@
   &.wrap {
     flex-wrap: wrap;
   }
+  &.column{
+    flex-direction: column;
+  }
   &-img {
     display: flex;
     gap: 10px;
