@@ -362,7 +362,7 @@ input[type=text]::placeholder, textarea::placeholder {
 }
 .card-image {
   width: 100%;
-  height: 270px;
+  height: 300px;
 }
 @media only screen and (max-width: 768px) {
   .card-image {
