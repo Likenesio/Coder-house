@@ -54,7 +54,7 @@
         }
         a {
           &:hover {
-            color: map-get($color-black, 950);
+            color: map-get($color-circular, 150);
           }
         }
       }

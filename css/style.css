@@ -29,7 +29,6 @@ h1 {
 
 h2 {
   font-size: 1.875rem;
-  color: #6d6d6d;
 }
 
 h3 {
@@ -155,7 +154,7 @@ input[type=text]::placeholder, textarea::placeholder {
   padding: 10px;
 }
 .flex-container-footer ul li a:hover {
-  color: #000000;
+  color: #2ecece;
 }
 
 .container {
@@ -262,7 +261,7 @@ input[type=text]::placeholder, textarea::placeholder {
   justify-content: center;
 }
 .navbar ul li a:hover {
-  color: #000000;
+  color: #2ecece;
 }
 .navbar-items {
   display: flex;
@@ -272,7 +271,7 @@ input[type=text]::placeholder, textarea::placeholder {
 @media only screen and (max-width: 900px) {
   .navbar-items {
     position: fixed;
-    width: 40%;
+    width: 50%;
     height: 100vh;
     opacity: 0.8;
     right: 0;

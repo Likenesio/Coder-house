@@ -9,7 +9,7 @@
     li {
       a {
         &:hover {
-          color: map-get($color-black, 950);
+          color: map-get($color-circular, 150);
         }
       }
     }
@@ -20,7 +20,7 @@
     align-items: center;
     @media only screen and (max-width: 900px) {
       position: fixed;
-      width: 40%;
+      width: 50%;
       height: 100vh;
       opacity: 0.8;
       right: 0;
