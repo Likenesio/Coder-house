@@ -1,9 +1,11 @@
 @charset 'utf-8';
 @import './variables';
+@import "./mixins.scss";
 /* BASE */
 @import './base/typografia';
 @import './base/reset.scss';
-@import "./base/utils"; 
+@import "./base/utils";
+
 
 /* COMPONENTS*/
 @import './components/button';
@@ -14,3 +16,5 @@
 @import './components/carrusel.scss';
 @import "./components/form.scss";
 @import "./components/_blog.scss"
+
+

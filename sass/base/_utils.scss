@@ -1,9 +1,5 @@
 .flex-container {
-  gap: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  @include flex(center, center, center, 20px, row);
   font-size: $font-md;
   &.wrap {
     flex-wrap: wrap;
@@ -29,16 +25,11 @@
     font-size: $font-xl;
   }
   &-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    @include flex(center, center, space-around, 20px, row);
     padding:5rem 0px;
     border-top: map-get($color-black, 50) ridge 1px;
     @media only screen and (max-width:768px) {
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
+      @include flex(center, center, space-around, 50px, column);
     }
     address {
       font-size: $font-md;

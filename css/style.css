@@ -96,11 +96,12 @@ input[type=text]::placeholder, textarea::placeholder {
 }
 
 .flex-container {
-  gap: 20px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  gap: 20px;
+  flex-direction: row;
   font-size: 1rem;
 }
 .flex-container.wrap {
@@ -128,17 +129,22 @@ input[type=text]::placeholder, textarea::placeholder {
 }
 .flex-container-footer {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  text-align: center;
   justify-content: space-around;
+  gap: 20px;
+  flex-direction: row;
   padding: 5rem 0px;
   border-top: #f6f6f6 ridge 1px;
 }
 @media only screen and (max-width: 768px) {
   .flex-container-footer {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
     gap: 50px;
+    flex-direction: column;
   }
 }
 .flex-container-footer address {
