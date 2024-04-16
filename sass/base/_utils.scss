@@ -4,7 +4,7 @@
   &.wrap {
     flex-wrap: wrap;
   }
-  &.column{
+  &.column {
     flex-direction: column;
   }
   &-img {
@@ -16,19 +16,23 @@
     gap: 8px;
   }
   &.bg {
-    background: linear-gradient(to right, map-get($gradiant,50), map-get($gradiant,100));
+    background: linear-gradient(
+      to right,
+      map-get($gradiant, 50),
+      map-get($gradiant, 100)
+    );
   }
-  &.pd{
+  &.pd {
     padding: 1rem 0rem;
   }
-  &.text{
+  &.text {
     font-size: $font-xl;
   }
   &-footer {
     @include flex(center, center, space-around, 20px, row);
-    padding:5rem 0px;
+    padding: 5rem 0px;
     border-top: map-get($color-black, 50) ridge 1px;
-    @media only screen and (max-width:768px) {
+    @media only screen and (max-width: 768px) {
       @include flex(center, center, space-around, 50px, column);
     }
     address {
@@ -37,8 +41,8 @@
     ul {
       text-align: start;
       font-size: $font-md;
-      li{
-        h2{
+      li {
+        h2 {
           color: map-get($color-black, 50);
           border-radius: 16px;
           padding: 10px;
@@ -54,10 +58,7 @@
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, center, center, 20px, column);
   max-width: 100%;
   max-height: 100vh;
   overflow: hidden;
@@ -69,7 +70,7 @@
     font-weight: $font-black;
     text-align: center;
     z-index: 1;
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       font-size: $font-5xl;
     }
   }
@@ -86,26 +87,27 @@
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 25rem));
-  grid-template-rows: auto auto;
+  @include grid(
+    repeat(auto-fit, minmax(150px, 25rem)),
+    repeat(2, auto),
+    center,
+    center
+  );
   gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  &-img{
+  &-img {
     max-width: 100%;
     height: auto;
   }
-  &-title{
+  &-title {
     color: map-get($color-black, 50);
   }
 }
 
-.seccion{
-  &-pd-bt{
+.seccion {
+  &-pd-bt {
     padding-bottom: 3rem;
   }
-  &-pd-tp{
+  &-pd-tp {
     padding-top: 3rem;
   }
 }

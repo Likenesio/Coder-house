@@ -1,8 +1,26 @@
-@mixin flex($align-items, $text-align, $justify-content, $gap, $flex-direccion) {
- display: flex;
- align-items: $align-items;
- text-align: $text-align;
- justify-content: $justify-content;
- gap:$gap;
- flex-direction: $flex-direccion;
+@mixin flex(
+  $align-items,
+  $text-align,
+  $justify-content,
+  $gap,
+  $flex-direccion
+) {
+  display: flex;
+  align-items: $align-items;
+  text-align: $text-align;
+  justify-content: $justify-content;
+  gap: $gap;
+  flex-direction: $flex-direccion;
+}
+@mixin grid(
+  $grid-template-columns,
+  $grid-tempate-rows,
+  $align-items,
+  $justify-content
+) {
+  display: grid;
+  grid-template-columns: $grid-template-columns;
+  grid-template-rows: $grid-tempate-rows;
+  align-items: $align-items;
+  justify-content: $justify-content;
 }
