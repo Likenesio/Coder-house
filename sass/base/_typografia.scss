@@ -1,7 +1,7 @@
 h1 {
   font-size: $font-5xl;
   color: map-get($color-black, 100);
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     font-size: $font-4xl;
   }
 }

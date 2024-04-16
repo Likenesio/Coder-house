@@ -18,29 +18,29 @@ $card-border: var(
   &:hover {
     box-shadow: $shadow-md;
   }
-  &.wh{
-    max-width:100%;
+  &.wh {
+    max-width: 100%;
     height: 25rem;
   }
-  &.column{
+  &.column {
     flex-direction: column;
   }
-  &.circular{
+  &.circular {
     @include flex(center, center, center, 1px, column);
-    width:300px;
+    width: 300px;
     height: 300px;
     border-radius: $card-circular;
-    &.verde{
+    &.verde {
       background-color: map-get($color-circular, 100);
     }
-    &.amarillo{
+    &.amarillo {
       background-color: map-get($color-circular, 50);
     }
   }
-  &.center{
-    @include flex(center, start, start, .1875rem, column);
+  &.center {
+    @include flex(center, start, start, 0.1875rem, column);
   }
-  &.pd{
+  &.pd {
     padding: 10px 20px;
   }
   &-text {
@@ -56,17 +56,17 @@ $card-border: var(
     font-weight: $font-bold;
     text-align: center;
   }
-  &-title-black{
+  &-title-black {
     color: map-get($color-black, 900);
   }
-  &-title-white{
+  &-title-white {
     color: map-get($color-black, 50);
   }
   &-icon {
     width: 3.125rem;
     height: auto;
   }
-  &-wh-title{
+  &-wh-title {
     width: 300px;
     height: auto;
   }

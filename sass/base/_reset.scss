@@ -1,41 +1,46 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-
-html{
-    background: linear-gradient(to right, map-get($gradiant,50), map-get($gradiant,100));
-}
-body{
-        position: relative;
-        min-height: 100vh;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-text-size-adjust: 100%;
-        -webkit-tap-highlight-color: transparent;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    font-family: $font-secondary;
-    color: map-get($color-black, 50);
+html {
+  background: linear-gradient(
+    to right,
+    map-get($gradiant, 50),
+    map-get($gradiant, 100)
+  );
 }
-ul{
-    list-style: none;
-    font-family: $font-secondary;
-    color: map-get($color-black, 50);
+body {
+  position: relative;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
-input[type=text],textarea{
-    width: 100%;
-    height: 100%;
-    background: none;
-    color: map-get($color-black, 50);
-    padding-top: 20px;
-    border: none;
-    outline: 0px;
-    cursor: pointer;
-    font-family: $font-secondary;
+a {
+  text-decoration: none;
+  font-family: $font-secondary;
+  color: map-get($color-black, 50);
+}
+ul {
+  list-style: none;
+  font-family: $font-secondary;
+  color: map-get($color-black, 50);
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: map-get($color-black, 50);
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+  cursor: pointer;
+  font-family: $font-secondary;
 }

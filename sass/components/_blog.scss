@@ -8,15 +8,15 @@
     }
   }
   &.radius-second {
-    border-radius:5% 45% ;
+    border-radius: 5% 45%;
     @media only screen and (max-width: 768px) {
       border-radius: 10% 25%;
     }
   }
-  &.color-primary{
+  &.color-primary {
     background-color: map-get($color-circular, 150);
   }
-  &.color-secondary{
+  &.color-secondary {
     background-color: map-get($color-circular, 100);
   }
   @media only screen and (max-width: 768px) {
