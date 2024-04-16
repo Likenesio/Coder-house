@@ -1,10 +1,6 @@
 .navbar {
   border-top: map-get($color-black, 50) ridge 1px;
-  gap: 16px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  @include flex(center, center, center, 16px, row);
   ul {
     li {
       a {
@@ -15,10 +11,9 @@
     }
   }
   &-items {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+    @include flex(center, center, start, 16px, row);
     @media only screen and (max-width: 900px) {
+      flex-direction: column;
       position: fixed;
       width: 50%;
       height: 100vh;
@@ -27,7 +22,6 @@
       top: 21%;
       padding: 5% 0%;
       background: linear-gradient(to right, map-get($gradiant,50), map-get($gradiant,100));
-      flex-direction: column;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
       transform: translateX(100%);
       transition: transform 0.3s ease-in-out;

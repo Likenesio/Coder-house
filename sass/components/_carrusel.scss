@@ -1,15 +1,12 @@
 .grid-carrousel {
+  @include grid(1fr 2fr 1fr, repeat(2,1fr), center, center);
   width: 100%;
   height: auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     ". c ."
     ". item .";
     @media only screen and (max-width: 768px) {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
+      @include grid(1fr, 1fr, center, center);
       grid-template-areas:
       "c"
       "item";
@@ -54,6 +51,7 @@
 }
 
 .itemCarrouselArrows {
+  @include flex(center, center, space-between, 1px, row);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -61,9 +59,6 @@
   right: 0;
   max-width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding:.3125rem;
   i{
   &:hover {
@@ -72,9 +67,8 @@
   }
 }
   &-contenido {
+    @include flex(center, center, space-evenly, 1px, row);
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
     grid-area: item;
   }
   &-circulo {

@@ -258,22 +258,27 @@ input[type=text], textarea {
 
 .navbar {
   border-top: #f6f6f6 ridge 1px;
-  gap: 16px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  gap: 16px;
+  flex-direction: row;
 }
 .navbar ul li a:hover {
   color: #2ecece;
 }
 .navbar-items {
   display: flex;
-  gap: 16px;
   align-items: center;
+  text-align: center;
+  justify-content: start;
+  gap: 16px;
+  flex-direction: row;
 }
 @media only screen and (max-width: 900px) {
   .navbar-items {
+    flex-direction: column;
     position: fixed;
     width: 50%;
     height: 100vh;
@@ -282,7 +287,6 @@ input[type=text], textarea {
     top: 21%;
     padding: 5% 0%;
     background: linear-gradient(to right, #141E30, #243B55);
-    flex-direction: column;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
@@ -315,12 +319,15 @@ input[type=text], textarea {
   flex-direction: column;
 }
 .card.circular {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1px;
+  flex-direction: column;
   width: 300px;
   height: 300px;
   border-radius: var(--skull-card-circular, 50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .card.circular.verde {
   background-color: #4CCD99;
@@ -330,10 +337,11 @@ input[type=text], textarea {
 }
 .card.center {
   display: flex;
-  flex-direction: column;
-  justify-content: start;
   align-items: center;
+  text-align: start;
+  justify-content: start;
   gap: 0.1875rem;
+  flex-direction: column;
 }
 .card.pd {
   padding: 10px 20px;
@@ -374,34 +382,13 @@ input[type=text], textarea {
   }
 }
 .card-actions {
-  gap: 16px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  text-align: center;
   justify-content: flex-start;
-}
-
-.cards-container {
   gap: 16px;
-  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-}
-.cards-container-text {
-  align-items: flex-start;
-}
-.cards-container .card {
-  flex: 0 0 auto;
-  width: 100%;
-}
-@media only screen and (max-width: 768px) {
-  .cards-container .card {
-    width: calc(50% - 8px);
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .cards-container .card {
-    width: calc(25% - 12px);
-  }
 }
 
 .burger {
@@ -446,17 +433,22 @@ input[type=text], textarea {
 }
 
 .grid-carrousel {
-  width: 100%;
-  height: auto;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
   grid-template-areas: ". c ." ". item .";
 }
 @media only screen and (max-width: 768px) {
   .grid-carrousel {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
     grid-template-areas: "c" "item";
   }
 }
@@ -501,6 +493,12 @@ input[type=text], textarea {
 }
 
 .itemCarrouselArrows {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  gap: 1px;
+  flex-direction: row;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -508,9 +506,6 @@ input[type=text], textarea {
   right: 0;
   max-width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0.3125rem;
 }
 .itemCarrouselArrows i:hover {
@@ -518,9 +513,13 @@ input[type=text], textarea {
   color: #6d6d6d;
 }
 .itemCarrouselArrows-contenido {
-  width: 100%;
   display: flex;
+  align-items: center;
+  text-align: center;
   justify-content: space-evenly;
+  gap: 1px;
+  flex-direction: row;
+  width: 100%;
   grid-area: item;
 }
 .itemCarrouselArrows-circulo {
