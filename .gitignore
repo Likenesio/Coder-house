@@ -1,0 +1,7 @@
+# Archivos generados por Sass
+*.css
+*.map
+# Directorio donde se compilan los archivos Sass
+/css/
+# Dependencias de Sass
+/node_modules/
