@@ -25,13 +25,11 @@
   }
   &-content {
     color: map-get($color-black, 50);
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
     @media only screen and (max-width: 768px) {
-      max-width: auto;
-      padding-top: 10px;
-      padding-left: 2px;
-      padding-right: 2px;
+      max-width: 300px;
+      padding: 10px 10px;
     }
   }
   &-title {
@@ -45,9 +43,10 @@
     border-radius: 10% 30% 50% 70%;
     padding: 10px 5px;
     @media only screen and (max-width: 768px) {
-      max-width: 100%;
-      height: auto;
-      padding: 5px 5px;
+      max-width: auto;
+      height: 200px;
+      padding: 10px 10px;
+      overflow: hidden;
     }
   }
   &.pd-left {
