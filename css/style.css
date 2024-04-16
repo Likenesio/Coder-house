@@ -645,7 +645,7 @@ input:focus + .form-label:after, input:valid + .form-label:after, textarea:focus
   border-radius: 10% 30% 50% 70%;
   padding: 10px 5px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   .blog-image {
     max-width: auto;
     height: 200px;
