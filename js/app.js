@@ -26,9 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-let currentItem = 1;
+let currentItem = 0;
+const totalItems = 3;
+
+
 function moveCarousel(action, targetItem) {
-  const totalItems = 3;
   if (action === "prev") {
     currentItem = currentItem === 1 ? totalItems : currentItem - 1;
   } else if (action === "next") {
@@ -39,9 +41,21 @@ function moveCarousel(action, targetItem) {
   for (let i = 1; i <= totalItems; i++) {
     document.getElementById(`itemCarrousel-${i}`).style.display = "none";
   }
-  document.getElementById(`itemCarrousel-${currentItem}`).style.display =
-    "block";
+  document.getElementById(`itemCarrousel-${currentItem}`).style.display = "block";
+  updateActiveCircle();
 }
+
+function updateActiveCircle() {
+  const circles = document.querySelectorAll(".itemCarrouselArrows-circulo");
+  circles.forEach((circle, index) => {
+    if (index + 1 === currentItem) {
+      circle.style.color = "white";
+    } else {
+      circle.style.color = "#888888";
+    }
+  });
+}
+moveCarousel("next");
 setInterval(function () {
   moveCarousel("next");
 }, 3000);
