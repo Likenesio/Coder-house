@@ -1,22 +1,8 @@
-@charset 'utf-8';
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/buttons";
 
-// VARIABLES
-@import "./variables";
+@import "./mystyles";
 
-// MIXINS
-@import "./mixins.scss";
-
-/* BASE */
-@import "./base/typografia";
-@import "./base/reset.scss";
-@import "./base/utils";
-
-/* COMPONENTS*/
-@import "./components/button";
-@import "./components/icon.scss";
-@import "./components/navbar.scss";
-@import "./components/card.scss";
-@import "./components/burger.scss";
-@import "./components/carrusel.scss";
-@import "./components/form.scss";
-@import "./components/_blog.scss";

@@ -6,14 +6,13 @@ $card-border: var(
   map-get($color-black, 950)
 ) !default;
 
-.card {
+.card{
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease;
   box-shadow: $shadow-xl;
   border-radius: $card-radius;
-  border: 1px solid $card-border;
-  background-color: $card-bg;
+  background-color: map-get($color-black, 50);
 
   &:hover {
     box-shadow: $shadow-md;
